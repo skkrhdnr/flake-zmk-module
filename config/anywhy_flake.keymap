@@ -36,6 +36,30 @@
             key-positions = <34 35>;
             layers = <0>;
         };
+
+        bt_0 {
+            bindings = <&bt_0>;
+            key-positions = <3 6>;
+            layers = <0>;
+        };
+
+        bt_1 {
+            bindings = <&bt_1>;
+            key-positions = <2 7>;
+            layers = <0>;
+        };
+
+        bt_2 {
+            bindings = <&bt_2>;
+            key-positions = <1 8>;
+            layers = <0>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 9>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -114,10 +138,10 @@
 
         base {
             bindings = <
-&kp Q        &kp W       &kp E             &high_lp 7 R  &kp T                 &kp Y            &kp U        &kp I                &kp O       &kp P
+&kp Q        &kp W       &kp E             &high_lp 6 R  &kp T                 &kp Y            &kp U        &kp I                &kp O       &kp P
 &cm LCTRL A  &cm LALT S  &cm LCMD D        &cm LSHFT F   &cm LG(LEFT_SHIFT) G  &cm RG(RSHFT) H  &cm RSHFT J  &cm RIGHT_COMMAND K  &cm RALT L  &cm RCTRL MINUS
 &kp Z        &kp X       &kp C             &kp V         &kp B                 &kp N            &kp M        &kp COMMA            &kp DOT     &kp FSLH
-&kp SPACE    &kp SPACE   &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 7 TAB             &lp 5 BACKSPACE  &lp 1 ENTER  &lp 4 LANGUAGE_1     &kp RET     &kp RET
+&none        &none       &lp 3 LANGUAGE_2  &lp 2 SPACE   &lp 6 TAB             &lp 5 BACKSPACE  &lp 1 ENTER  &lp 4 LANGUAGE_1     &none       &none
             >;
         };
 
@@ -168,16 +192,6 @@
 &none  &kp LC(LS(TAB))       &kp LG(DOWN_ARROW)  &kp LC(TAB)            &kp LS(LG(N4))  &kp K_MUTE  &kp RS(RA(C_VOL_DN))  &kp RS(RA(C_VOL_UP))  &none  &kp C_SLEEP
 &none  &kp RA(UP)            &none               &kp RA(DOWN)           &none           &none       &kp C_BRI_DEC         &kp C_BRI_INC         &none  &none
 &none  &none                 &kp LG(N0)          &kp LG(PLUS)           &kp LG(MINUS)   &none       &none                 &none                 &none  &none
-            >;
-        };
-
-        bt {
-            label = "FNC";
-            bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &bt BT_CLR
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &bt_0  &bt_1  &bt_2  &none  &none
             >;
         };
 
